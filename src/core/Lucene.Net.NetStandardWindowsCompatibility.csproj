@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Lucene.Net</RootNamespace>
+    <AssemblyName>Lucene.Net.NetStandardWindowsCompatibility</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Lucene.Net.snk</AssemblyOriginatorKeyFile>
+    <AssemblyTitle>Apache Lucene.Net</AssemblyTitle>
+    <Description>The Apache Software Foundation Lucene.Net a full-text search engine library</Description>
+    <Company>The Apache Software Foundation</Company>
+    <ProductName>Lucene.Net</ProductName>
+    <Copyright>Copyright 2006 - 2011 The Apache Software Foundation</Copyright>
+    <Version>3.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="Analysis\Standard\StandardTokenizerImpl.jflex" />
+    <None Include="Lucene.Net.Search.RemoteSearchable.config" />
+    <None Include="Lucene.Net.Search.TestSort.config" />
+    <None Include="Lucene.Net.snk" />
+    <None Include="QueryParser\QueryParser.jj" />
+  </ItemGroup>
+</Project>
